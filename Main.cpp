@@ -3,7 +3,7 @@
 
 int main()
 {
-    SimulationRunner sim(1000);
+    SimulationRunner sim(1000000);
     sim.run();
     return 0;
 }

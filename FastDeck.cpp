@@ -3,6 +3,7 @@
 #include <random>
 #include <iostream>
 
+/* Fast deck is similar to Deck but instead of Cards, it contains integers to increase simulation runtime */
 FastDeck::FastDeck() 
 {
     for (int i = 1; i <= 13; ++i) {
@@ -15,6 +16,7 @@ FastDeck::FastDeck()
             }
         }
     }
+    shuffle(); // This should only be done here and in replenish as this deck can be very large
 }
 
 std::vector<int>& FastDeck::getCardValues() {
@@ -41,6 +43,7 @@ int FastDeck::dealCard()
     }
 }
 
+// Refills the deck to its original size
 void FastDeck::replenish()  
 {
     cardValues.clear();
