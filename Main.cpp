@@ -3,7 +3,8 @@
 
 int main()
 {
-    SimulationRunner sim(1000000);
+    //test commit
+    SimulationRunner sim(100000);
     sim.run();
     return 0;
 }

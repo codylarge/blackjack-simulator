@@ -14,6 +14,7 @@ public:
 
     void run();
     void initSimulation(std::vector<int>& dealerHand, int& playerHit, bool& aceInPlay);
+    void printResults(std::vector<int>& saveHands, std::vector<int>& bustHands, int& neither);
     int simulateDealerHand(int dealerHandTotal, int hitCard, bool aceInPlay);
     bool checkForAce(std::vector<int>& dealerHand);
 };
